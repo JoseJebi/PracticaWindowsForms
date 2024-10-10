@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -44,21 +45,34 @@
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             this.btnCerrar.MouseHover += new System.EventHandler(this.btnCerrar_MouseHover);
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Haettenschweiler", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(185, 24);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(418, 34);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "Gestión avanzada de información personal";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
