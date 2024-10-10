@@ -31,7 +31,7 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tpgDatosPers = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             // 
             // tabControl
             // 
-            this.tabControl.Controls.Add(this.tabPage1);
+            this.tabControl.Controls.Add(this.tpgDatosPers);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Location = new System.Drawing.Point(27, 73);
             this.tabControl.Name = "tabControl";
@@ -69,15 +69,15 @@
             this.tabControl.Size = new System.Drawing.Size(747, 351);
             this.tabControl.TabIndex = 2;
             // 
-            // tabPage1
+            // tpgDatosPers
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(739, 325);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tpgDatosPers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tpgDatosPers.Location = new System.Drawing.Point(4, 22);
+            this.tpgDatosPers.Name = "tpgDatosPers";
+            this.tpgDatosPers.Padding = new System.Windows.Forms.Padding(3);
+            this.tpgDatosPers.Size = new System.Drawing.Size(739, 325);
+            this.tpgDatosPers.TabIndex = 0;
+            this.tpgDatosPers.Text = "Datos personales";
             // 
             // tabPage2
             // 
@@ -111,7 +111,7 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tpgDatosPers;
         private System.Windows.Forms.TabPage tabPage2;
     }
 }
