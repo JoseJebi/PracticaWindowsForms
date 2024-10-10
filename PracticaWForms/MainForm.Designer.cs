@@ -66,7 +66,7 @@
             this.tabControl.Location = new System.Drawing.Point(27, 73);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(747, 351);
+            this.tabControl.Size = new System.Drawing.Size(747, 280);
             this.tabControl.TabIndex = 2;
             // 
             // tpgDatosPers
@@ -75,7 +75,7 @@
             this.tpgDatosPers.Location = new System.Drawing.Point(4, 22);
             this.tpgDatosPers.Name = "tpgDatosPers";
             this.tpgDatosPers.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgDatosPers.Size = new System.Drawing.Size(739, 325);
+            this.tpgDatosPers.Size = new System.Drawing.Size(739, 254);
             this.tpgDatosPers.TabIndex = 0;
             this.tpgDatosPers.Text = "Datos personales";
             // 
