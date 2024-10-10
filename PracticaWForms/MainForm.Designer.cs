@@ -33,7 +33,19 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tpgDatosPers = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txbNombre = new System.Windows.Forms.TextBox();
+            this.txbDirecc = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.rbtHombre = new System.Windows.Forms.RadioButton();
+            this.rbtMujer = new System.Windows.Forms.RadioButton();
+            this.rbtOtro = new System.Windows.Forms.RadioButton();
+            this.gbxGender = new System.Windows.Forms.GroupBox();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tabControl.SuspendLayout();
+            this.tpgDatosPers.SuspendLayout();
+            this.gbxGender.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -72,6 +84,12 @@
             // tpgDatosPers
             // 
             this.tpgDatosPers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tpgDatosPers.Controls.Add(this.numericUpDown1);
+            this.tpgDatosPers.Controls.Add(this.monthCalendar1);
+            this.tpgDatosPers.Controls.Add(this.gbxGender);
+            this.tpgDatosPers.Controls.Add(this.txbEmail);
+            this.tpgDatosPers.Controls.Add(this.txbDirecc);
+            this.tpgDatosPers.Controls.Add(this.txbNombre);
             this.tpgDatosPers.Location = new System.Drawing.Point(4, 22);
             this.tpgDatosPers.Name = "tpgDatosPers";
             this.tpgDatosPers.Padding = new System.Windows.Forms.Padding(3);
@@ -89,6 +107,87 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // txbNombre
+            // 
+            this.txbNombre.Location = new System.Drawing.Point(80, 24);
+            this.txbNombre.Name = "txbNombre";
+            this.txbNombre.Size = new System.Drawing.Size(198, 20);
+            this.txbNombre.TabIndex = 0;
+            // 
+            // txbDirecc
+            // 
+            this.txbDirecc.Location = new System.Drawing.Point(80, 61);
+            this.txbDirecc.Name = "txbDirecc";
+            this.txbDirecc.Size = new System.Drawing.Size(198, 20);
+            this.txbDirecc.TabIndex = 1;
+            // 
+            // txbEmail
+            // 
+            this.txbEmail.Location = new System.Drawing.Point(80, 100);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(198, 20);
+            this.txbEmail.TabIndex = 2;
+            // 
+            // rbtHombre
+            // 
+            this.rbtHombre.AutoSize = true;
+            this.rbtHombre.Location = new System.Drawing.Point(6, 19);
+            this.rbtHombre.Name = "rbtHombre";
+            this.rbtHombre.Size = new System.Drawing.Size(85, 17);
+            this.rbtHombre.TabIndex = 0;
+            this.rbtHombre.TabStop = true;
+            this.rbtHombre.Text = "radioButton1";
+            this.rbtHombre.UseVisualStyleBackColor = true;
+            // 
+            // rbtMujer
+            // 
+            this.rbtMujer.AutoSize = true;
+            this.rbtMujer.Location = new System.Drawing.Point(6, 42);
+            this.rbtMujer.Name = "rbtMujer";
+            this.rbtMujer.Size = new System.Drawing.Size(85, 17);
+            this.rbtMujer.TabIndex = 1;
+            this.rbtMujer.TabStop = true;
+            this.rbtMujer.Text = "radioButton2";
+            this.rbtMujer.UseVisualStyleBackColor = true;
+            // 
+            // rbtOtro
+            // 
+            this.rbtOtro.AutoSize = true;
+            this.rbtOtro.Location = new System.Drawing.Point(6, 65);
+            this.rbtOtro.Name = "rbtOtro";
+            this.rbtOtro.Size = new System.Drawing.Size(85, 17);
+            this.rbtOtro.TabIndex = 2;
+            this.rbtOtro.TabStop = true;
+            this.rbtOtro.Text = "radioButton3";
+            this.rbtOtro.UseVisualStyleBackColor = true;
+            // 
+            // gbxGender
+            // 
+            this.gbxGender.Controls.Add(this.rbtHombre);
+            this.gbxGender.Controls.Add(this.rbtOtro);
+            this.gbxGender.Controls.Add(this.rbtMujer);
+            this.gbxGender.Location = new System.Drawing.Point(28, 137);
+            this.gbxGender.Name = "gbxGender";
+            this.gbxGender.Size = new System.Drawing.Size(102, 100);
+            this.gbxGender.TabIndex = 3;
+            this.gbxGender.TabStop = false;
+            this.gbxGender.Text = "groupBox1";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
+            this.monthCalendar1.Location = new System.Drawing.Point(380, 57);
+            this.monthCalendar1.MaxSelectionCount = 1;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 4;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(664, 137);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(50, 20);
+            this.numericUpDown1.TabIndex = 5;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +200,11 @@
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.tabControl.ResumeLayout(false);
+            this.tpgDatosPers.ResumeLayout(false);
+            this.tpgDatosPers.PerformLayout();
+            this.gbxGender.ResumeLayout(false);
+            this.gbxGender.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +217,14 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tpgDatosPers;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.TextBox txbDirecc;
+        private System.Windows.Forms.TextBox txbNombre;
+        private System.Windows.Forms.RadioButton rbtOtro;
+        private System.Windows.Forms.RadioButton rbtMujer;
+        private System.Windows.Forms.RadioButton rbtHombre;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.GroupBox gbxGender;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
