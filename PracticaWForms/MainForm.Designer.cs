@@ -190,13 +190,20 @@
             this.clnfechaNac.MaxSelectionCount = 1;
             this.clnfechaNac.Name = "clnfechaNac";
             this.clnfechaNac.TabIndex = 4;
+            this.clnfechaNac.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.clnfechaNac_DateChanged);
             // 
             // nudEdad
             // 
             this.nudEdad.Location = new System.Drawing.Point(664, 137);
+            this.nudEdad.Maximum = new decimal(new int[] {
+            150,
+            0,
+            0,
+            0});
             this.nudEdad.Name = "nudEdad";
             this.nudEdad.Size = new System.Drawing.Size(50, 20);
             this.nudEdad.TabIndex = 5;
+            this.nudEdad.ValueChanged += new System.EventHandler(this.nudEdad_ValueChanged);
             // 
             // lblNombre
             // 

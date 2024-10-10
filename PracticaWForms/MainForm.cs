@@ -12,6 +12,8 @@ namespace PracticaWForms
 {
     public partial class MainForm : Form
     {
+        int prevYears = 0;
+
         public MainForm()
         {
             InitializeComponent();
@@ -25,6 +27,17 @@ namespace PracticaWForms
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void clnfechaNac_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            nudEdad.Value = clnfechaNac.SelectionStart.Year;
+            prevYears=(int)nudEdad.Value;
+        }
+
+        private void nudEdad_ValueChanged(object sender, EventArgs e)
+        {
+            clnfechaNac.SelectionStart = clnfechaNac.SelectionStart.AddYears(prevYears-(int)nudEdad.Value);
         }
     }
 }
